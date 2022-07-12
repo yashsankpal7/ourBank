@@ -1,11 +1,9 @@
 .block{
   // background-color: aquamarine;
   margin: 1rem;
-  display: inline-block;
+  display: block;
   background-color: grey;
   
-  width: 20rem;
-
   &_header{
     height: 8rem;
     width: 25rem;
@@ -13,6 +11,10 @@
 
   &_para{
     width: 25rem;
+  }
+
+  &_title{
+    width: 20rem;
   }
 
 }

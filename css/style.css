@@ -1,8 +1,7 @@
 .block {
   margin: 1rem;
-  display: inline-block;
+  display: block;
   background-color: grey;
-  width: 20rem;
 }
 .block_header {
   height: 8rem;
@@ -10,6 +9,9 @@
 }
 .block_para {
   width: 25rem;
+}
+.block_title {
+  width: 20rem;
 }
 
 .home {
@@ -38,6 +40,24 @@
 .img-right {
   width: 25rem;
   height: 30rem;
+}
+
+.service {
+  margin: 3rem 0 0 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.service-card {
+  background-color: aqua;
+  display: flex;
+  height: 10rem;
+  width: 15rem;
+  align-items: center;
+  border: 0 4rem #fff;
+}
+.service-text {
+  display: block;
 }
 
 *,

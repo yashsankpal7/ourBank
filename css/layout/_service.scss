@@ -1,0 +1,21 @@
+.service{
+  margin: 3rem 0 0 0;
+  display: flex;
+  justify-content: center;
+  // align-items: center;
+  flex-wrap: wrap;
+
+  &-card{
+    background-color: aqua;
+    display: flex;
+    height: 10rem;
+    width: 15rem;
+
+    align-items: center;
+    border: 0 4rem #fff;
+    // margin: 0rem 10rem 2rem 0;
+  }
+  &-text{
+    display: block;
+  }
+}
