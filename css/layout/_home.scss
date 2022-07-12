@@ -1,0 +1,33 @@
+.home{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+
+  &-items{
+    display: flex;
+    margin: 1rem 0 1rem 0;
+  }
+
+  &-box{  
+    display: block;
+  }
+  &-text{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 0 0 0;
+  }
+}
+
+.img{
+  &-left{
+    width: 30rem;
+    height: 20rem;
+  }
+
+  &-right{
+    width: 25rem;
+    height: 30rem;
+  }
+}

@@ -1,0 +1,61 @@
+.block {
+  margin: 1rem;
+  display: inline-block;
+  background-color: grey;
+  width: 20rem;
+}
+.block_header {
+  height: 8rem;
+  width: 25rem;
+}
+.block_para {
+  width: 25rem;
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.home-items {
+  display: flex;
+  margin: 1rem 0 1rem 0;
+}
+.home-box {
+  display: block;
+}
+.home-text {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 0 0 0;
+}
+
+.img-left {
+  width: 30rem;
+  height: 20rem;
+}
+.img-right {
+  width: 25rem;
+  height: 30rem;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Lato";
+  font-size: 16px;
+  font-weight: 400;
+  background-size: cover;
+  height: 100vh;
+}
+
+html {
+  scroll-behavior: smooth;
+}/*# sourceMappingURL=style.css.map */
