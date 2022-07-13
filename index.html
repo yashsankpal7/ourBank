@@ -9,7 +9,7 @@
 	</head>
 	<body>
 		<header>
-			<marquee>
+			<marquee class="block" onmouseover="this.stop();" onmouseout="this.start();">
 				<h1>
 					Our Bank
 				</h1>
@@ -18,18 +18,30 @@
 
 		<!-- SignUp/SignIn -->
 		<!--    Login -->
-		<div>
-			<nav>
-				<a href="#home">Home</a>
-				<a href="#about">About Us</a>
-				<a href="#service">Service</a>
-				<a href="#netbanking">Netbanking</a>
-				<a href="#contactUs">Contact Us</a>
+		<div class="navbar block">
+			<nav class="navbar-items">
+				<ul>
+					<li>
+						<a href="#home" class="navbar-item">Home</a>
+					</li>
+					<li>
+						<a href="#about" class="navbar-item">About Us</a>
+					</li>
+					<li>
+						<a href="#service" class="navbar-item">Service</a>
+					</li>
+					<li>
+						<a href="#netbanking" class="navbar-item">Netbanking</a>
+					</li>
+					<li>
+						<a href="#contactUs" class="navbar-item">Contact Us</a>
+					</li>
+					<li>
+						<input type="text" name="search" class="navbar-search" placeholder="Search..">
+					</li>
+				</ul>
 			</nav>
 		</div>
-    <br>
-    <br>
-
 		<main>
 			<!-- Home--> 
 			<section id="home"> 
@@ -71,15 +83,23 @@
 			</section>
 	
 			<!--    About -->
+			<!-- Caurosel-->
 			<section id="about"> 
-				<div class="block">
-					<div>
-						<!-- Caurosel-->
-						<img src="laney-smith-FwNUSwJDZIQ-unsplash.jpg" width="300" height="200">
-						<img src="laney-smith-FwNUSwJDZIQ-unsplash.jpg" width="300" height="200">
-						<img src="laney-smith-FwNUSwJDZIQ-unsplash.jpg" width="300" height="200">
-						<img src="laney-smith-FwNUSwJDZIQ-unsplash.jpg" width="300" height="200">
-						<img src="laney-smith-FwNUSwJDZIQ-unsplash.jpg" width="300" height="200">
+				<div class="about block">
+					<div class="about-items">
+				
+						<div class="about-item">&nbsp;</div>
+						<div class="about-item">&nbsp;</div>
+						<div class="about-item">&nbsp;</div>
+						<div class="about-item">&nbsp;</div>
+						<div class="about-item">&nbsp;</div>
+						<!-- <div class="about-item">&nbsp;</div>
+						<div class="about-item">&nbsp;</div> -->
+						<!-- <img src="laney-smith-FwNUSwJDZIQ-unsplash.jpg">
+						<img src="laney-smith-FwNUSwJDZIQ-unsplash.jpg">
+						<img src="laney-smith-FwNUSwJDZIQ-unsplash.jpg">
+						<img src="laney-smith-FwNUSwJDZIQ-unsplash.jpg">
+						<img src="laney-smith-FwNUSwJDZIQ-unsplash.jpg"> -->
 					</div>
 					<div>
 						<h3>

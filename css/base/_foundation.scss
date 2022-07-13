@@ -16,3 +16,32 @@ body {
 html{
   scroll-behavior: smooth;
 }
+
+// a, a:hover, a:focus, a:active {
+//   text-decoration: none;
+//   color: inherit;
+// }
+
+input:focus{
+  outline: none;
+  box-shadow: none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */

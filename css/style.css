@@ -45,6 +45,46 @@
   height: 30rem;
 }
 
+.about {
+  background-color: bisque;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+}
+.about-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30rem;
+  width: 90rem;
+  padding: 0 1rem;
+}
+.about-items::after {
+  background-color: black;
+  content: "sfas";
+  box-shadow: 1rem 0 0 #fff;
+}
+.about-items::after:hover {
+  height: 30rem;
+}
+.about-items::before {
+  background-color: black;
+  content: "sfas";
+}
+.about-item {
+  background-image: url("../images/mathieu-stern-1zO4O3Z0UJA-unsplash.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  height: 15rem;
+  width: 15rem;
+}
+.about-item:hover {
+  height: 20rem;
+  width: 20rem;
+  margin: -1rem;
+}
+
 .service {
   margin: 3rem 0 0 0;
   display: flex;
@@ -68,6 +108,33 @@
   margin: 1rem 0;
 }
 
+.navbar-items > ul {
+  display: flex;
+  align-items: center;
+}
+.navbar-items > ul > li {
+  font-size: 1.5rem;
+  color: azure;
+}
+.navbar-items > ul > li:last-of-type {
+  margin-left: auto;
+}
+.navbar-search {
+  justify-self: end;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 0 0;
+  width: 20rem;
+  margin-right: 2rem;
+}
+.navbar-item {
+  display: block;
+  padding: 1rem;
+}
+.navbar-item:hover {
+  background-color: rgb(50, 45, 45);
+}
+
 *,
 *::before,
 *::after {
@@ -88,6 +155,29 @@ html {
   scroll-behavior: smooth;
 }
 
+input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
 .footer {
   padding: 1rem;
   display: flex;
