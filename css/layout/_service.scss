@@ -1,21 +1,30 @@
 .service{
   margin: 3rem 0 0 0;
   display: flex;
-  justify-content: center;
+  // justify-content: center;
   // align-items: center;
   flex-wrap: wrap;
+  margin: 0 5rem;
 
   &-card{
-    background-color: aqua;
+    // background-color: grey;
     display: flex;
-    height: 10rem;
-    width: 15rem;
 
-    align-items: center;
-    border: 0 4rem #fff;
-    // margin: 0rem 10rem 2rem 0;
+    flex: 25%;
+    margin: 1rem;
   }
+  
+  &_image{
+    background-image: linear-gradient(to bottom right,rgba(#2C3639,1),rgba(#fff,0.5)),url('../images/mackenzie-marco-XG88BYDSDZA-unsplash.jpg');
+    background-attachment: fixed;
+    background-size:cover;
+    width: 100%;
+    height: auto;
+
+  }
+
   &-text{
     display: block;
+    margin: 1rem 0;
   }
 }

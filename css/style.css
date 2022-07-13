@@ -32,6 +32,9 @@
   flex-direction: column;
   padding: 3rem 0 0 0;
 }
+.home-text_right {
+  align-items: flex-end;
+}
 
 .img-left {
   width: 30rem;
@@ -45,19 +48,24 @@
 .service {
   margin: 3rem 0 0 0;
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  margin: 0 5rem;
 }
 .service-card {
-  background-color: aqua;
   display: flex;
-  height: 10rem;
-  width: 15rem;
-  align-items: center;
-  border: 0 4rem #fff;
+  flex: 25%;
+  margin: 1rem;
+}
+.service_image {
+  background-image: linear-gradient(to bottom right, #2c3639, rgba(255, 255, 255, 0.5)), url("../images/mackenzie-marco-XG88BYDSDZA-unsplash.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  height: auto;
 }
 .service-text {
   display: block;
+  margin: 1rem 0;
 }
 
 *,
@@ -78,4 +86,11 @@ body {
 
 html {
   scroll-behavior: smooth;
+}
+
+.footer {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  color: whitesmoke;
 }/*# sourceMappingURL=style.css.map */
