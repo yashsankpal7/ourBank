@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+
+    body{
+      display: flex;
+      justify-content: center;
+    }
+
+    .tmp{
+      margin-top: 10rem;
+    }
+  </style>
+  <script>
+
+    function add(a,b){
+      document.forms['frm']['res'].value = parseInt(a) + parseInt(b)
+    }
+
+    function sub(a,b){
+      document.forms['frm']['res'].value = parseInt(a) - parseInt(b)
+    }
+
+    function div(a,b){
+      
+      if(!parseInt(b)) alert("b should be greater than 0")
+
+      document.forms['frm']['res'].value = parseInt(a) / parseInt(b)
+    }
+
+    function mul(a,b){
+
+      document.forms['frm']['res'].value = parseInt(a) * parseInt(b)
+    }
+
+    function one(operator){
+      let a = document.forms['frm']['a'].value
+      let b = document.forms['frm']['b'].value
+      if(operator === '/' && !parseInt(b)) alert("b should be greater than 0")
+
+      c = parseInt(a) + operator + parseInt(b)
+
+      eval(c)
+
+      document.forms['frm']['res'].value = c
+    }
+
+  </script>
+</head>
+<body>
+  <form name="frm" class="tmp">
+    <label> Enter value for a: </label><input type="number" name="a">
+    <br>
+    <label> Enter value for b: </label><input type="number" name="b">
+    <br>
+    <label> Result: </label><input type="number" name="res">
+    <br>
+    <!-- <button onclick="add(a.value,b.value)" type="button"> ADD </button>
+    <button onclick="sub(a.value,b.value)" type="button"> SUB </button>
+    <button onclick="mul(a.value,b.value)" type="button"> MUL </button>
+    <button onclick="div(a.value,b.value)" type="button"> DIV </button> -->
+
+    <button onclick="one('+')" type="button" name="add"> ADD </button>
+    <button onclick="one('-')" type="button" name="sub"> SUB </button>
+    <button onclick="one('*')" type="button" name="mul"> MUL </button>
+    <button onclick="one('/')" type="button" name="div"> DIV </button>
+  </form>
+</body>
+</html>

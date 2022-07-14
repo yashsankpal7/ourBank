@@ -21,10 +21,18 @@
     width: 100%;
     height: auto;
 
+    // transition: hover 2s;
   }
-
+    
   &-text{
-    display: block;
-    margin: 1rem 0;
+    &:hover{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      & > div.block_header{
+        width: 40rem;
+      }
+    }
+    // margin: 1rem 0;
   }
 }

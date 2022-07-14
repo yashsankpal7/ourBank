@@ -19,13 +19,15 @@
     border: 0 0;
     width: 20rem;
     margin-right: 2rem;
+    background-color: bisque;
   }
   
   &-item{
     display: block;
     padding: 1rem;
     &:hover{
-      background-color: rgb(50, 45, 45);
+      background-color: bisque;
+      color: #000;
     }
   }
 }

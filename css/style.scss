@@ -1,8 +1,13 @@
 // root file for compiling 
+//base
+@import "./base/foundation";
+@import "./base/variables";
+@import "./base/footer";
 
 
 //component
 @import "./components/block";
+
 //layout
 @import "./layout//home";
 @import "./layout/about";
@@ -10,7 +15,3 @@
 @import "./layout/service";
 @import "./layout/navbar";
 @import "./layout/netbanking";
-//base
-@import "./base/foundation";
-@import "./base/variables";
-@import "./base/footer";
