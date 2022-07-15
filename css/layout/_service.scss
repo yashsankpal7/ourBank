@@ -36,3 +36,42 @@
     // margin: 1rem 0;
   }
 }
+
+.box{
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: antiquewhite;
+
+
+  &-items{
+    display: flex;
+    flex-direction: column;
+    // background-color: aqua;
+    margin: 2rem 0;
+  }
+  
+  &-item{
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    flex: 25%;
+    width: 50rem;
+    & > *{
+      width: 10rem;
+      font-size: 1rem;
+      height: 2rem;
+    }
+  }
+
+  &-label{
+    display: flex;
+    align-items: center;
+  }
+  &-field{
+    width: 20rem;
+    padding: .5rem;
+  }
+}

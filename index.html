@@ -105,21 +105,6 @@
 				</div>
 			</section>
 	
-			<h2>Modal Example</h2>
-
-			<!-- Trigger/Open The Modal -->
-			<button id="myBtn">Open Modal</button>
-	
-			<!-- The Modal -->
-			<div id="myModal" class="modal">
-	
-				<!-- Modal content -->
-				<div class="modal-content">
-					<span class="close">&times;</span>
-					<p>Some text in the Modal..</p>
-				</div>
-	
-			</div>
 
 			<!--    Service -->
 			<section id="service"> 
@@ -195,6 +180,36 @@
 							</div>
 						</div>
 					</div>
+				</div>
+				<div class="box">
+					<form class="box-items" name="Loan" >
+						<div class="box-item">
+							<label class="box-label"> Applicant Name</label> <input class="box-field" type="text" name="appName" required maxlength="20" minlength="4">
+						</div>
+						<div class="box-item">
+							<label class="box-label"> Type </label> 
+							<select class="box-field" name="typeSelect" onchange="change()">
+								<option value="home" selected >HOME</option>
+								<option value="car">CAR</option>
+								<option value="personal">PERSONAL</option>
+							</select>
+						</div>
+						<div class="box-item">
+							<label class="box-label"> Amount </label> <input class="box-field" type="number" name="amt" required >
+						</div>
+						<div class="box-item">
+							<label class="box-label"> ROI </label> <input class="box-field" type="text" name="roi" disabled value="7">
+						</div>
+						<div class="box-item">
+							<label class="box-label"> Duration(Years) </label> <input class="box-field" type="number" name="duration" required>
+						</div>
+						<div class="box-item">
+							<label class="box-label"> Emi </label> <input class="box-field" type="text" name="emi" disabled>
+						</div>
+						<div class="box-item">
+							<button type="button" class="box-btn" onsubmit="calc()"> Calculate</button>
+						</div>
+					</form>
 				</div>
 			</section>
 	
