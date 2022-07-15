@@ -182,7 +182,7 @@
 					</div>
 				</div>
 				<div class="box">
-					<form class="box-items" name="Loan" >
+					<form class="box-items" name="Loan" onsubmit="calc()">
 						<div class="box-item">
 							<label class="box-label"> Applicant Name</label> <input class="box-field" type="text" name="appName" required maxlength="20" minlength="4">
 						</div>
@@ -207,7 +207,7 @@
 							<label class="box-label"> Emi </label> <input class="box-field" type="text" name="emi" disabled>
 						</div>
 						<div class="box-item">
-							<button type="button" class="box-btn" onsubmit="calc()"> Calculate</button>
+							<button type="submit" class="box-btn" > Calculate</button>
 						</div>
 					</form>
 				</div>
