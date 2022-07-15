@@ -200,6 +200,7 @@ li a {
 }
 .service-text:hover > div.block_header {
   width: 40rem;
+  transition: 0.8s;
 }
 
 .box {
@@ -207,7 +208,7 @@ li a {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: antiquewhite;
+  background-color: bisque;
 }
 .box-items {
   display: flex;

@@ -50,9 +50,11 @@ function change(params) {
 
 function calc(params) {
   
+  // params.preventdefault();
+
   let p = parseInt(document.forms['Loan']['amt'].value)
 
-  let r = parseInt(document.forms['Loan']['roi'].value)
+  let r = parseInt(document.forms['Loan']['roi'].value)/100
 
   let n = parseInt(document.forms['Loan']['duration'].value)
 

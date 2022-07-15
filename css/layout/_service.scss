@@ -23,7 +23,7 @@
 
     // transition: hover 2s;
   }
-    
+  
   &-text{
     &:hover{
       display: flex;
@@ -31,6 +31,7 @@
       align-items: center;
       & > div.block_header{
         width: 40rem;
+        transition: .8s;
       }
     }
     // margin: 1rem 0;
@@ -43,7 +44,7 @@
   align-items: center;
   justify-content: center;
 
-  background-color: antiquewhite;
+  background-color: bisque;
 
 
   &-items{
